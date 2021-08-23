@@ -1,4 +1,5 @@
 #!/bin/bash
 
-# ルーティングテーブル
+# ルーティングテーブルの表示
+# 宛先+Next Hop
 ip route show
