@@ -2,5 +2,9 @@
 
 FILE=${1}
 
-touch ${FILE}
-echo "#!/bin/bash" > ${FILE}
+if [ -e $FILE ]; then
+  echo "${1} is already exists."
+  exit 1
+fi
+
+echo "#!/bin/bash" >> ${FILE}
