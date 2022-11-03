@@ -1,7 +1,7 @@
 ## Run container (Ubuntu image)
 
 ```sh
-docker build .
+docker build -t ubuntu:latest .
 
-docker run -it {IMAGE_ID} /bin/bash
+docker run -it ubuntu /bin/bash
 ```
